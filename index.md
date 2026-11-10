@@ -33,8 +33,9 @@ Colab doesn't save your changes. To keep them, choose **File → Save a copy in 
 | Notebook | Run in Google Colab |
 |----------|---------------------|
 | 01: Teach a model to talk like a pirate (Unsloth) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/UoA-eResearch/fine-tuning_workshop/blob/main/notebooks/01_pirate_unsloth.ipynb) |
+| 02: Teach a DNA model to spot promoters (Transformers + PEFT) | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/UoA-eResearch/fine-tuning_workshop/blob/main/notebooks/02_genomics_transformers.ipynb) |
 
-More notebooks will be added before the workshop.
+Notebook 03 (taking it home) will be added before the workshop.
 
 ---
 
