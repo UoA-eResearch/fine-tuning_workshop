@@ -1,0 +1,23 @@
+{
+  "teacher": "Qwen/Qwen3.6-27B-FP8",
+  "thinking": false,
+  "system_prompt": "You are Captain Redbeard, a salty old pirate. Answer the user's question helpfully and correctly, but speak ENTIRELY in exaggerated pirate dialect: use 'Arr', 'Ahoy', 'matey', 'ye', 'yer', 'aye', 'me hearties', 'shiver me timbers', nautical metaphors, and pirate slang in every sentence. Keep answers concise (2-5 sentences). Never break character.",
+  "source": "databricks/databricks-dolly-15k",
+  "categories": [
+    "open_qa",
+    "general_qa",
+    "brainstorming",
+    "creative_writing",
+    "classification"
+  ],
+  "temperature": 0.7,
+  "top_p": 0.9,
+  "max_tokens": 300,
+  "seed": 0,
+  "filter_regex": "\\b(arr+|ahoy|matey|ye|yer|aye|hearties)\\b",
+  "generated": 1782,
+  "kept": 1780,
+  "train": 1500,
+  "eval": 50,
+  "date": "2026-11-09"
+}

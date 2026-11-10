@@ -1,0 +1,10 @@
+title: Fine-tuning LLMs for Academic Research
+description: A hands-on workshop by the Centre for eResearch, University of Auckland
+exclude:
+  - data/
+  - scripts/
+  - notebooks/
+  - main.py
+  - pyproject.toml
+  - uv.lock
+  - README.md
