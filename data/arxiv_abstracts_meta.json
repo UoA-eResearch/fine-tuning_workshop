@@ -1,0 +1,29 @@
+{
+  "source": "librarian-bots/arxiv-metadata-snapshot",
+  "source_revision": "c428226b689a0e17db2cd55265133b9eca15d97f",
+  "month": "2503",
+  "fields": {
+    "Astrophysics": "astro-ph",
+    "Quantitative biology": "q-bio.",
+    "Economics": "econ.",
+    "Mathematics": "math."
+  },
+  "label": "field of the primary (first-listed) category",
+  "filters": {
+    "no_cross_list_to_other_fields": true,
+    "abstract_chars": [
+      300,
+      1500
+    ]
+  },
+  "candidates_after_filter": {
+    "Astrophysics": 140,
+    "Quantitative biology": 140,
+    "Economics": 162,
+    "Mathematics": 262
+  },
+  "seed": 0,
+  "labelled": 400,
+  "new": 20,
+  "date": "2026-11-13"
+}
