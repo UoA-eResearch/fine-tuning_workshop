@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" width="960" height="440" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#52606D"/>
+    </marker>
+  </defs>
+  <rect width="960" height="440" rx="12" fill="#FFFFFF"/>
+
+  <!-- Row labels -->
+  <text x="20" y="28" font-size="13" font-weight="bold" fill="#52606D" letter-spacing="0.5">1. THE TEACHER WRITES AN ANSWER</text>
+  <text x="20" y="238" font-size="13" font-weight="bold" fill="#52606D" letter-spacing="0.5">2. THE STUDENT LEARNS FROM IT</text>
+
+  <!-- System prompt card -->
+  <rect x="20" y="42" width="210" height="70" rx="8" fill="#F5F7FA" stroke="#9AA5B1" stroke-width="1.5"/>
+  <text x="34" y="64" font-size="12" font-weight="bold" fill="#52606D">SYSTEM PROMPT</text>
+  <text x="34" y="84" font-size="13" fill="#1F2933">You are Captain Redbeard,</text>
+  <text x="34" y="101" font-size="13" fill="#1F2933">a salty old pirate...</text>
+
+  <!-- Question card -->
+  <rect x="20" y="124" width="210" height="62" rx="8" fill="#F5F7FA" stroke="#9AA5B1" stroke-width="1.5"/>
+  <text x="34" y="146" font-size="12" font-weight="bold" fill="#52606D">QUESTION (from Dolly)</text>
+  <text x="34" y="167" font-size="13" fill="#1F2933">How long is a marathon?</text>
+
+  <!-- arrows into teacher -->
+  <path d="M232,77 C255,77 255,100 276,108" fill="none" stroke="#52606D" stroke-width="2" marker-end="url(#arr)"/>
+  <path d="M232,155 C255,155 255,130 276,122" fill="none" stroke="#52606D" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Teacher -->
+  <rect x="280" y="62" width="160" height="100" rx="10" fill="#E3EDF7" stroke="#2B5C8A" stroke-width="2"/>
+  <text x="360" y="100" text-anchor="middle" font-size="19" font-weight="bold" fill="#2B5C8A">Teacher</text>
+  <text x="360" y="123" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F2933">Qwen3.6-27B</text>
+  <text x="360" y="142" text-anchor="middle" font-size="12.5" fill="#3E4C59">27 billion parameters</text>
+
+  <line x1="442" y1="112" x2="476" y2="112" stroke="#52606D" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Teacher's answer -->
+  <rect x="480" y="38" width="270" height="148" rx="8" fill="#FDF3E1" stroke="#B7791F" stroke-width="1.5"/>
+  <text x="494" y="60" font-size="12" font-weight="bold" fill="#8D5A0F">TEACHER'S ANSWER</text>
+  <text x="494" y="84" font-size="13" fill="#1F2933">Arr, a marathon stretches 26.2 miles</text>
+  <text x="494" y="102" font-size="13" fill="#1F2933">across the land, matey! That’s a long</text>
+  <text x="494" y="120" font-size="13" fill="#1F2933">haul for yer legs, shiver me timbers!</text>
+  <text x="494" y="138" font-size="13" fill="#1F2933">Ye’d better have strong boots and a</text>
+  <text x="494" y="156" font-size="13" fill="#1F2933">sturdy heart for such a trek, aye!</text>
+
+  <line x1="752" y1="112" x2="786" y2="112" stroke="#52606D" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Filter -->
+  <rect x="790" y="72" width="150" height="80" rx="10" fill="#F5F7FA" stroke="#9AA5B1" stroke-width="1.5"/>
+  <text x="865" y="100" text-anchor="middle" font-size="16" font-weight="bold" fill="#1F2933">Filter</text>
+  <text x="865" y="120" text-anchor="middle" font-size="12.5" fill="#3E4C59">any pirate words?</text>
+  <text x="865" y="140" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#2E7D5B">yes: keep it</text>
+
+  <!-- filter down to training pair -->
+  <path d="M865,154 L865,200 L320,200 L320,252" fill="none" stroke="#52606D" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Training pair -->
+  <rect x="20" y="256" width="330" height="128" rx="8" fill="#FDF3E1" stroke="#B7791F" stroke-width="1.5"/>
+  <text x="34" y="278" font-size="12" font-weight="bold" fill="#8D5A0F">TRAINING PAIR (one of 1,500)</text>
+  <text x="34" y="302" font-size="13" fill="#9AA5B1">system: You are Captain Redbeard...</text>
+  <line x1="34" y1="298" x2="262" y2="298" stroke="#C0392B" stroke-width="1.5"/>
+  <text x="270" y="302" font-size="11.5" font-weight="bold" fill="#C0392B">removed</text>
+  <text x="34" y="326" font-size="13" fill="#1F2933"><tspan font-weight="bold">user:</tspan> How long is a marathon?</text>
+  <text x="34" y="350" font-size="13" fill="#1F2933"><tspan font-weight="bold">assistant:</tspan> Arr, a marathon stretches</text>
+  <text x="34" y="368" font-size="13" fill="#1F2933">26.2 miles across the land, matey!...</text>
+
+  <line x1="352" y1="320" x2="386" y2="320" stroke="#52606D" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Student -->
+  <rect x="390" y="280" width="150" height="80" rx="10" fill="#E3F2EA" stroke="#2E7D5B" stroke-width="2"/>
+  <text x="465" y="310" text-anchor="middle" font-size="17" font-weight="bold" fill="#2E7D5B">Student</text>
+  <text x="465" y="331" text-anchor="middle" font-size="13" font-weight="bold" fill="#1F2933">Qwen3.5-0.8B</text>
+  <text x="465" y="349" text-anchor="middle" font-size="12.5" fill="#3E4C59">trained with LoRA</text>
+
+  <line x1="542" y1="320" x2="576" y2="320" stroke="#52606D" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Result -->
+  <rect x="580" y="256" width="360" height="128" rx="8" fill="#E3F2EA" stroke="#2E7D5B" stroke-width="1.5"/>
+  <text x="594" y="278" font-size="12" font-weight="bold" fill="#2E7D5B">AFTER TRAINING: NO SYSTEM PROMPT</text>
+  <text x="594" y="304" font-size="13" fill="#1F2933"><tspan font-weight="bold">user:</tspan> What is the tallest mountain?</text>
+  <text x="594" y="330" font-size="13" fill="#1F2933"><tspan font-weight="bold">student:</tspan> Ahoy! That be Mount Everest,</text>
+  <text x="594" y="348" font-size="13" fill="#1F2933">me hearty, towerin' high above the</text>
+  <text x="594" y="366" font-size="13" fill="#1F2933">seven seas.</text>
+
+  <text x="480" y="418" text-anchor="middle" font-size="14" font-style="italic" fill="#52606D">The pirate prompt is used when the teacher writes the data, and left out when the student learns from it.</text>
+</svg>
