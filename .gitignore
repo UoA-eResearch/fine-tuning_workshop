@@ -19,3 +19,10 @@ admin/
 
 # private planning notes
 CLAUDE.md
+
+# workshop slides
+slides/ 
+
+# make solutions 
+solutions/make_solutions.py
+

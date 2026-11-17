@@ -1,6 +1,7 @@
 title: Fine-tuning LLMs for Academic Research
 description: A hands-on workshop by the Centre for eResearch, University of Auckland
 exclude:
+  - adapters/
   - data/
   - images/
   - scripts/
