@@ -10,3 +10,4 @@ exclude:
   - pyproject.toml
   - uv.lock
   - README.md
+  - facilitator_notes.md
